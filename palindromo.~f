@@ -1,0 +1,24 @@
+        program palindromo
+                implicit none
+                character(len=100) :: texto, texto_invertido
+                integer :: i, longitud
+
+                print *, "Ingrese un numero o palabra:"
+                read *, texto
+
+                longitud = len_trim(texto)
+                texto_invertido = ""
+
+                do i = longitud, 1, -1
+                   texto_invertido = trim(texto_invertido) // texto(i:i)
+                end do
+
+        if (texto(1:longitud) == texto_invertido(1:longitud)) then
+                   print *, "Es un palindromo"
+                else
+                    print *, "No es un palindromo"
+                end if
+
+                pause
+
+        end program palindromo

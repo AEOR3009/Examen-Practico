@@ -1,0 +1,21 @@
+        program fibonacci
+                implicit none
+                integer :: n, i, a, b, temp
+
+                print *, "¨Cu ntos t‚rminos de Fibonacci desea?"
+                read *, n
+
+                a = 0
+                b = 1
+
+                print *, "Serie de Fibonacci:"
+                do i = 1, n
+                   print *, a
+                   temp = a + b
+                   a = b
+                   b = temp
+                end do
+                
+                pause
+
+        end program fibonacci

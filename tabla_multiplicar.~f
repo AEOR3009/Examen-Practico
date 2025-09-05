@@ -1,0 +1,15 @@
+        program tabla_multiplicar
+                implicit none
+                integer :: num, i
+
+                print *, "Ingrese un numero:"
+                read *, num
+
+                print *, "Tabla de multiplicar del", num
+                do i = 1, 10
+                   print *, num, "x", i, "=", num * i
+                end do
+                
+                pause
+
+        end program tabla_multiplicar

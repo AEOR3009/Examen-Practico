@@ -1,0 +1,32 @@
+        program mayor_menor
+                implicit none
+                integer :: n, i
+                real :: num, mayor, menor
+
+                print *, "¨Cuantos numeros desea ingresar?"
+                read *, n
+
+                print *, "Ingrese el numero 1:"
+                read *, num
+                mayor = num
+                menor = num
+
+                do i = 2, n
+                   print *, "Ingrese el numero", i, ":"
+                   read *, num
+
+                   if (num > mayor) then
+                      mayor = num
+                   end if
+
+                   if (num < menor) then
+                      menor = num
+                   end if
+                end do
+
+                print *, "El mayor numero es:", mayor
+                print *, "El menor numero es:", menor
+                
+                pause
+
+        end program mayor_menor

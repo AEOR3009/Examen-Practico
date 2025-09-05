@@ -1,0 +1,16 @@
+        program par_impar
+                implicit none
+                integer :: num
+
+                print *, "Ingrese un numero:"
+                read *, num
+
+                if (mod(num, 2) == 0) then
+                   print *, "El numero ",num, "es par"
+                else
+                    print *, "El numero ",num, "es impar"
+                end if
+        
+                pause
+
+        end program par_impar
